@@ -1,4 +1,5 @@
 
+        // start of products list script 
         function createProductCard(imageSrc, sellerName, productName, price, location) {
             var cardDiv = document.createElement('div');
             cardDiv.className = 'card bg-white shadow-lg mx-auto lg:mx-1 my-1 rounded-md';
@@ -31,7 +32,9 @@
         createProductCard("Assets/images/hilux double cab.webp", "TEDDY D.", "Hilux double cab", "KES.2,000,000", "Nairobi");
         createProductCard("Assets/images/Tyota crown(crossover type).jpg", "TEDDY D.", "Toyota crown (crossover type)", "KES.4,000,000", "Nairobi");
 
+        // end of products display script
 
+        // start of user show contact script
           let show = true;
 
     document.getElementById('showContactButton').addEventListener('click', function() {
@@ -43,3 +46,61 @@
             show = true;
         }
     });
+    // end of user show contact script
+
+
+        // start of "click to write feedback" script starts here  
+        const feedbackBox = document.querySelector('.feedback-box');
+        const feedbackTextarea = document.getElementById('feedbackTextarea');
+
+        feedbackBox.addEventListener('click', () => {
+            feedbackTextarea.readOnly = !feedbackTextarea.readOnly;
+
+            if (!feedbackTextarea.readOnly) {
+                feedbackTextarea.focus();
+            }
+        });
+        // end of feedback script
+
+        // start of banner slider script
+         document.addEventListener('DOMContentLoaded', function () {
+            var carousel = document.getElementById('carouselExampleFade');
+
+            var currentIndex = 0;
+
+            var items = carousel.querySelectorAll('.carousel-item');
+
+            function showNextSlide() {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % items.length;
+                items[currentIndex].classList.add('active');
+            }
+
+            function showPrevSlide() {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                items[currentIndex].classList.add('active');
+            }
+
+            var slideInterval = setInterval(showNextSlide, 3000);
+
+            carousel.addEventListener('mouseover', function () {
+                clearInterval(slideInterval);
+            });
+
+
+            carousel.addEventListener('mouseleave', function () {
+                slideInterval = setInterval(showNextSlide, 3000);
+            });
+
+            var nextButton = document.querySelector('.carousel-control-next');
+            var prevButton = document.querySelector('.carousel-control-prev');
+
+            nextButton.addEventListener('click', showNextSlide);
+            prevButton.addEventListener('click', showPrevSlide);
+        });
+    // end of the banner slider script
+   
+
+
+    
