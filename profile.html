@@ -23,7 +23,7 @@
       }
     </style>
   </head>
-  <body class="bg-[#f7f7f7]">
+  <body class=" bg-[#f7f7f7]">
         <!-- header -->
         <section class="fixed top-0 w-full z-50 bg-white shadow-lg">
           <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -75,12 +75,25 @@
                       </div>
                   </div>
               </div>
+          </div> 
+          
           </div>
-          </div>
-        </section>  
+        </section> 
+        <section class="mt-24">
+            <div style="text-align: end;" class="bg-gray-200 p-2 ml-2">
+              <span class="font-bold text-[#f94f01] text-xs material-symbols-outlined">
+              arrow_back_ios
+              </span>
+              <span class="font-bold text-[#f94f01] text-xs material-symbols-outlined">
+              arrow_back_ios
+              </span>
+              <a href="https://more.co.ke/products">Back to results</a></div>
+          </section> 
+       
         <!-- main body section -->
 
-        <section class="lg:flex mt-24 lg:mt-28">
+        <section class="lg:flex mt-1 lg:mt-1">
+          
           <!--sidebar section-->
           <section class="body_left  flex-col lg:block">
             <section>
@@ -98,7 +111,7 @@
           <i class="fa fa-map-marker text-[#f94f01] px-3" aria-hidden="true" style="font-size: 20px;"></i><p>mombasa rd, Nairobi Kenya</p>
       </div>
       <div class="text-center pt-3">
-          <button class="px-5 w-[80%] bg-[#f94f01] py-1 text-white text-sm" >Show contact info</button>
+          <button class="px-5 w-[80%] bg-[#f94f01] py-1 text-white text-sm rounded-sm" >Show contact info</button>
       </div>
       <div>
           <ul class="action_buttons flex justify-between w-[60%] pt-12 pb-8" style="margin: 0 auto;">
@@ -123,16 +136,12 @@
 </div>
 
 <!-- Profile Section Hidden on Small Screens -->
-<div class="profile-section hidden lg:block">
-  <!-- Your content here (same as the original) -->
-</div>
-
                 <!-- Profile Section Displayed on Large Screens -->
-<div class="profile-section hidden lg:block">
-  <div class="profile_info bg-[#ffff] w-[300px] ml-2 mx-2 shadow-lg">
+<div class=" profile-section hidden lg:block">
+  <div class="rounded-md profile_info bg-[#ffff] w-[300px] ml-2 mx-2 shadow-lg">
       <div class="profile_banner h-[70px] w-full bg-[#f94f01]"></div>
       <div class="profile_photo h-[5rem] w-[5rem] bg-black text-center" style="margin: 0 auto;border-radius: 50%; margin-top: -3rem;">
-          <img class="w-20 h-20 flex items-center justify-center rounded-full" src="Assets/images/toyotaicon.jfif" alt="">
+          <img class="w-20 h-20 flex items-center justify-center rounded-full" src="Assets/images/profile p.o.webp" alt="">
       </div>
       <div class="text-center pt-[0.6rem] text-xl font-semibold" style="font-family: Proxima-nova, sans-serif;">
           <h3>Tedd D.</h3>
@@ -141,9 +150,8 @@
           <i class="fa fa-map-marker text-[#f94f01] px-3" aria-hidden="true" style="font-size: 20px;"></i><p>mombasa rd, Nairobi Kenya</p>
       </div>
       <div class="text-center pt-3">
-    <button id="showContactButton" class="px-5 w-[80%] bg-[#f94f01] py-1 text-white text-sm">Show contact</button>
+    <button id="showContactButton" class="px-5 w-[80%] bg-[#f94f01] py-1 text-white text-sm rounded-sm">Show contact</button>
 </div>
-<script></script>
       <div>
           <ul class="action_buttons flex justify-between w-[60%] pt-12 pb-8" style="margin: 0 auto;">
             <a href="">
@@ -173,33 +181,41 @@
 </div>
 
 <!-- Profile Section Hidden on Large Screens -->
-<div class="profile-section lg:hidden">
+<div class="rounded-md profile-section lg:hidden">
 </div>
               </div>
             </section>
               <!-- side info -->
              <section class="m-2 hidden lg:flex flex-col items-center w-[300px]">
-        <div class="bg-white p-4 shadow-lg mb-4">
+        <div class="rounded-md bg-white p-4 shadow-lg mb-4">
             <div class="about text-sm text-[#f94f01] font-bold mb-4">
                 <h3>About Tedd D.</h3>
             </div>
             <div class="info p-2 bg-white shadow-lg mb-4">
                 <p class="text-xs">Your trusted destination for top-notch vehicles in Nairobi. Unparalleled selection of all car brands, coupled with unrivaled service – making your dream car a reality with us.</p>
             </div>
-            <div class="feedback-box bg-gray-200 p-4 rounded-lg">
-                <div class="profile-icon bg-orange-500 w-20 h-20 flex items-center justify-center rounded-full mb-4">
-                    <!-- Profile icongoes here -->
-                    <img class="w-20 h-20 flex items-center justify-center rounded-full" src="Assets/images/profile.jpg" alt="Profile Image">
-                </div>
-                <div class="feedback-form">
-                    <textarea id="feedbackTextarea" class="w-full p-2 border border-gray-300 focus:outline-none bg-transparent" readonly placeholder="Click to write your feedback"></textarea>
-                </div>
+            <div class="w-full rounded-sm mb-1 flex bg-gray-300 p-4">
+              <span class="text-[#f94f01] text-md material-symbols-outlined">
+              how_to_reg
+              </span>
+              <p class="ml-2 text-sm">Joined on 11/09/2023</p>
             </div>
+           
         </div>
+        
         <div class="map-section bg-white p-4 shadow-lg">
             <h3 class="text-sm text-[#f94f01] font-bold mb-4">Seller's Location Map</h3>
-            <img class="h-60 rounded-lg" src="Assets/images/map1.png" alt="Map Location">
+            <img class="h-30 rounded-lg" src="Assets/images/map1.png" alt="Map Location">
         </div>
+         <div class="feedback-box bg-gray-200 w-full mt-2 shadow-lg p-4 h-40 rounded-sm">
+                <div class="profile-icon bg-orange-500 w-10 h-11 flex items-center justify-center rounded-full mb-4">
+                    <!-- Profile icon goes here -->
+                    <img class="w-10 h-10 flex items-center justify-center rounded-full" src="Assets/images/user.png" alt="Profile Image">
+                </div>
+                <div class="feedback-form">
+                    <textarea id="feedbackTextarea" class="bg-white text-xs h-14 text-sm w-full p-2 border rounded-md border-[#2c303b] focus:outline-none" readonly placeholder="Click to write your feedback"></textarea>
+                </div>
+            </div>
         <div class="map-section bg-white mt-2 w-full p-4 shadow-lg">
             <h3 class="text-sm text-[#f94f01] font-bold mb-4">Safety tips for buyers</h3>
         <ul class="list-disc ml-2 text-xs">
@@ -313,9 +329,10 @@
         </section>
         </section>
     </body>
-   
     <footer class="bg-[#2c303b]">
-     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8"> 
+      
+  
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
        <div>
         <a href="https://more.co.ke/">
